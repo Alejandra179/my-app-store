@@ -9,7 +9,7 @@ function Login() {
   return (
     <>
     
-    <IonContent className="ion-padding">
+    <IonContent className="ion-padding" color="dark">
       <IonInput
         id="custom-input"
         label="Custom Counter Format"
@@ -18,7 +18,7 @@ function Login() {
         maxlength={11}
         counterFormatter={(inputLength, maxLength) => `${maxLength - inputLength} characters remaining`}
       ></IonInput>
-       <IonButton onClick={nextPage} color="light">Light</IonButton>
+       <IonButton onClick={nextPage} color="dark">Light</IonButton>
        </IonContent>
     </>
   );
