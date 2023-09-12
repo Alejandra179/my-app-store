@@ -4,7 +4,7 @@ import { IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
 import {caretBackOutline, fastFoodOutline, cafeOutline,beerOutline } from 'ionicons/icons';
 export default function Menu() {
   return (
-    <>
+    
          <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
             <IonIcon icon={caretBackOutline} />
@@ -26,6 +26,6 @@ export default function Menu() {
 
           
         </IonTabBar>
-    </>
+    
   )
 }

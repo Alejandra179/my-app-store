@@ -34,10 +34,10 @@ function App() {
       <IonReactRouter>
         <IonRouterOutlet>
           <Route path="/login" component={Login}  exact={true}/>
-          <Route path="/home" component={Home}  exact={true}/>
-          <Route path="/desayunos" component={BreakFast}  />
-          <Route path="/comidas" component={Food}/>
-          <Route path="/bebidas" component={Drink}/>
+          <Route path="/home" component={Home} />
+          <Route path="/desayunos" exact component={BreakFast}  />
+          <Route path="/comidas" exact component={Food}/>
+          <Route path="/bebidas" exact component={Drink}/>
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

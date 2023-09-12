@@ -6,6 +6,7 @@ import { Redirect } from 'react-router';
 import { IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
 
 import {caretBackOutline, fastFoodOutline, cafeOutline,beerOutline } from 'ionicons/icons';
+import Menu from '../components/Menu';
 export default function Home() {
   return (
     <IonReactRouter>
