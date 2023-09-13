@@ -1,7 +1,8 @@
 import React from 'react';
-import { setupIonicReact, IonApp, IonContent, IonRouterOutlet, } from '@ionic/react';
+import { setupIonicReact, IonApp, IonRouterOutlet, IonTabBar,IonTabButton,IonIcon, IonLabel } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route, useHistory} from 'react-router-dom';
+import {cafeOutline,fastFoodOutline,caretBackOutline,beerOutline } from 'ionicons/icons';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -38,7 +39,29 @@ function App() {
           <Route path="/desayunos" exact component={BreakFast}  />
           <Route path="/comidas" exact component={Food}/>
           <Route path="/bebidas" exact component={Drink}/>
+
         </IonRouterOutlet>
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="home" href="/home">
+            <IonIcon icon={caretBackOutline} />
+            <IonLabel>Atrás</IonLabel>
+          </IonTabButton>
+
+          <IonTabButton tab="desayunos" href="/desayunos">
+            <IonIcon icon={cafeOutline} />
+            <IonLabel>Desayunos</IonLabel>
+          </IonTabButton>
+
+          <IonTabButton tab="comidas" href="/comidas">
+            <IonIcon icon={fastFoodOutline} />
+            <IonLabel>Comidas</IonLabel>
+          </IonTabButton>
+
+          <IonTabButton tab="bebidas" href="/bebidas">
+            <IonIcon icon={beerOutline} />
+            <IonLabel>Bebidas</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
       </IonReactRouter>
     </IonApp>
   )
