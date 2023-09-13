@@ -21,10 +21,10 @@ import '@ionic/react/css/display.css';
 import './App.css'
 import Login from './components/login'
 
-import BreakFast from './pages/BreakFast';
-import Food from './pages/Food';
-import Drink from './pages/Drink';
-import Home from './pages/Home';
+import BreakFast from './pages/BreakFastPage';
+import Food from './pages/FoodPage';
+import Drink from './pages/DrinkPage';
+import HomePage from './pages/HomePage';
 setupIonicReact({ mode: 'md' });
 function App() {
   
@@ -34,7 +34,7 @@ function App() {
       <IonReactRouter>
         <IonRouterOutlet>
           <Route path="/login" component={Login}  exact={true}/>
-          <Route path="/home" component={Home} />
+          <Route path="/home" component={HomePage} />
           <Route path="/desayunos" exact component={BreakFast}  />
           <Route path="/comidas" exact component={Food}/>
           <Route path="/bebidas" exact component={Drink}/>

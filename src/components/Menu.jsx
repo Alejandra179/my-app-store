@@ -6,11 +6,10 @@ import { Route, Redirect } from 'react-router';
 
 import {cafeOutline,fastFoodOutline,caretBackOutline,beerOutline } from 'ionicons/icons';
 
-
-import BreakFast from '../pages/BreakFast';
-import Home from '../pages/Home';
-import Food from '../pages/Food';
-import Drink from '../pages/Drink';
+import HomePage from '../pages/HomePage';
+import BreakFastPage from '../pages/BreakFastPage';
+import FoodPage from '../pages/FoodPage';
+import DrinkPage from '../pages/DrinkPage';
 
 function Menu() {
   return (
@@ -23,10 +22,10 @@ function Menu() {
 
           Use the component prop when your component depends on the RouterComponentProps passed in automatically.
         */}
-          <Route path="/home" render={() => <Home />} exact={true} />
-          <Route path="/desayunos" render={() => <BreakFast/>} exact={true} />
-          <Route path="/comidas" render={() => <Food/>} exact={true} />
-          <Route path="/bebidas" render={() => <Drink/>} exact={true} />
+          <Route path="/home" render={() => <HomePage />} exact={true} />
+          <Route path="/desayunos" render={() => <BreakFastPage/>} exact={true} />
+          <Route path="/comidas" render={() => <FoodPage/>} exact={true} />
+          <Route path="/bebidas" render={() => <DrinkPage/>} exact={true} />
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
